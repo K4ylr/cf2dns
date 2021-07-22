@@ -16,13 +16,13 @@ from dns.qCloud import QcloudApi
 from dns.aliyun import AliApi
 
 #可以从https://shop.hostmonit.com获取
-KEY = os.environ["KEY"]  #"o1zrmHAF"
+KEY = "9Mi0Z9MlmA1y"
 #CM:移动 CU:联通 CT:电信
 #修改需要更改的dnspod域名核子域名
-DOMAINS = json.loads(os.environ["DOMAINS"])  #{"hostmonit.com": {"@": ["CM","CU","CT"], "shop": ["CM", "CU", "CT"], "stock": ["CM","CU","CT"]},"4096.me": {"@": ["CM","CU","CT"], "vv": ["CM","CU","CT"]}}
+DOMAINS = {"kaylr.me": {"@": ["CM","CU","CT"]  #{"hostmonit.com": {"@": ["CM","CU","CT"], "shop": ["CM", "CU", "CT"], "stock": ["CM","CU","CT"]},"4096.me": {"@": ["CM","CU","CT"], "vv": ["CM","CU","CT"]}}
 #腾讯云后台获取 https://console.cloud.tencent.com/cam/capi
-SECRETID = os.environ["SECRETID"]    #'AKIDV**********Hfo8CzfjgN'
-SECRETKEY = os.environ["SECRETKEY"]   #'ZrVs*************gqjOp1zVl'
+SECRETID = 'AKIDf9NL2SbWAXeT2KL9hyyhAMHvIPFo68tM'    #'AKIDV**********Hfo8CzfjgN'
+SECRETKEY = 'DAsJTLxIM8fvuc4F9l6HBoAG5duuZx4x'   #'ZrVs*************gqjOp1zVl'
 #默认为普通版本 不用修改
 AFFECT_NUM = 2
 #DNS服务商 如果使用DNSPod改为1 如果使用阿里云解析改成2
